@@ -1,8 +1,6 @@
-// LOAD DATA
 var friendData = require('../data/friends.js');
 var path = require('path');
 
-// ROUTING
 module.exports = function(app) {
 	app.get('/api/friends', function(req, res) {
 		res.json(friendData);
@@ -30,12 +28,9 @@ module.exports = function(app) {
     console.log("-----------------------------");
     console.log("best person is " + friendData[matchscore].name + " and best score is " + bestDifferent);
     console.log("-----------------------------");
-
-    // push in the user input into the friendArray
     friendData.push(req.body);
+    
 
-    // respond back with the best match
     res.json({name: friendData[matchscore].name, photo: friendData[matchscore].photo});
-    // res.json(true);
 	});
 }
