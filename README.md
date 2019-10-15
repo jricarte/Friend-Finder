@@ -4,7 +4,7 @@ Friend Finder is a match-maker app that takes in data based on how a user answer
 
 Instructions:
 
-1. Click on "Find your Match!"<br/>
+1. Click on "Go to Survey!"<br/>
 ![How to use the app](app/public/images/takeSurvey.png)
 
 2. Fill out the Survey<br/>
